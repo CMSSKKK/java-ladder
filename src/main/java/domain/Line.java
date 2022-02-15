@@ -23,5 +23,6 @@ public class Line {
         return generateLine(random.nextBoolean());
     }
 
+
 }
 

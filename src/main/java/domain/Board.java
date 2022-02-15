@@ -1,7 +1,6 @@
 package domain;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import static Util.Valid.checkPlayers;
@@ -40,7 +39,6 @@ public class Board {
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-
         return stringBuilder.toString();
     }
 
@@ -56,7 +54,7 @@ public class Board {
         if(col % 2 == 0) {
             return VERTICAL;
         }
-        return line.generatRandomLine();
+        return line.generateRandomLine();
     }
 }
 

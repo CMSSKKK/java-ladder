@@ -2,7 +2,7 @@ package View;
 
 import Util.Validation;
 import domain.Ladder;
-import domain.Names;
+import domain.Players;
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class InputView {
         return new Ladder(askPlayers(),askLadderHeight());
     }
 
-    private static Names askPlayers() {
+    private static Players askPlayers() {
         System.out.println(PLAYER_NAMES_COMMAND);
         System.out.println(PLAYER_NAMES_RESTRICTIONS);
         String players = scanner.nextLine().replaceAll(" ", "");
@@ -27,7 +27,7 @@ public class InputView {
             System.out.println(e.getMessage());
             return askPlayers();
         }
-        return new Names(players);
+        return new Players(players);
     }
 
     private static int askLadderHeight() {

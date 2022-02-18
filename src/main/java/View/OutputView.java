@@ -1,7 +1,6 @@
 package View;
 
 import domain.Ladder;
-import domain.Names;
 
 public class OutputView {
 

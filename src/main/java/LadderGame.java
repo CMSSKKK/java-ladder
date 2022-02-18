@@ -1,7 +1,6 @@
 import View.InputView;
 import View.OutputView;
 import domain.Ladder;
-import domain.Names;
 
 public class LadderGame {
 

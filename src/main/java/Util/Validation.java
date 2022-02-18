@@ -14,13 +14,13 @@ public class Validation {
     private static final String INPUT_ERROR_MESSAGE = "입력을 확인해주세요.";
 
     public static void checkPlayers(int count) {
-        if(count < MIN_PLAYER || count > MAX_PLAYER) {
+        if (count < MIN_PLAYER || count > MAX_PLAYER) {
             throw new IllegalArgumentException(PLAYER_ERROR_MESSAGE);
         }
     }
 
     public static int checkHeight(int height) {
-        if(height < MIN_HEIGHT) {
+        if (height < MIN_HEIGHT) {
             throw new IllegalArgumentException(HEIGHT_ERROR_MESSGAE);
         }
         return height;
@@ -29,7 +29,7 @@ public class Validation {
     public static void checkInputNames(String input) {
         Pattern pattern = Pattern.compile(INPUT_REGEX);
         Matcher matcher = pattern.matcher(input);
-        if(!matcher.matches()) {
+        if (!matcher.matches()) {
             throw new IllegalArgumentException(INPUT_ERROR_MESSAGE);
         }
     }

@@ -13,13 +13,20 @@ public class OutputView {
     }
 
     public static void showTargetResult(LadderGame ladderGame, String name) {
+        System.out.println();
         System.out.println(RESULT_MESSAGE);
         System.out.println(ladderGame.findResult(name));
+        System.out.println();
     }
 
     public static void showAllResult(LadderGame ladderGame) {
+        System.out.println();
         System.out.println(RESULT_MESSAGE);
         System.out.println(ladderGame.getAllResult());
+        System.out.println();
     }
 
+    public static void closeGame() {
+        System.out.println(END_MESSAGE);
+    }
 }

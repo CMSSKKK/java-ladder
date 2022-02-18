@@ -1,13 +1,14 @@
 import View.InputView;
 import View.OutputView;
 import domain.Ladder;
+import domain.LadderGame;
 
 public class GameController {
 
     public void run() {
-        Ladder ladder = InputView.askSettingLadder();
+        LadderGame ladderGame = InputView.askSettingLadder();
         InputView.close();
-        OutputView.showLadder(ladder);
+        OutputView.showLadder(ladderGame);
     }
 
 }

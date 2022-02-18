@@ -1,11 +1,11 @@
 package View;
 
-import domain.Ladder;
+import domain.LadderGame;
 
 public class OutputView {
 
-    public static void showLadder(Ladder ladder) {
-        System.out.println(ladder.toString());
+    public static void showLadder(LadderGame ladderGame) {
+        System.out.println(ladderGame.toString());
     }
 
 }

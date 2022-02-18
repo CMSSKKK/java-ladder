@@ -2,7 +2,7 @@ import View.InputView;
 import View.OutputView;
 import domain.Ladder;
 
-public class LadderGame {
+public class GameController {
 
     public void run() {
         Ladder ladder = InputView.askSettingLadder();

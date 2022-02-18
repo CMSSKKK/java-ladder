@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        LadderGame ladderGame = new LadderGame();
+        GameController ladderGame = new GameController();
         ladderGame.run();
     }
 }

@@ -2,6 +2,7 @@ package View;
 
 import Util.Validation;
 import domain.Ladder;
+import domain.LadderGame;
 import domain.Players;
 
 import java.util.Scanner;
@@ -13,7 +14,13 @@ public class InputView {
     private static final String LADDER_HEIGHT_COMMAND = "최대 사다리 높이는 몇 개인가요?";
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static String askPlayers() {
+
+
+    public static LadderGame askSettingLadder() {
+        return new LadderGame(askPlayers(),askLadderHeight());
+    }
+
+    private static Players askPlayers() {
         System.out.println(PLAYER_NAMES_COMMAND);
         System.out.println(PLAYER_NAMES_RESTRICTIONS);
         String players = scanner.nextLine().replaceAll(" ","");

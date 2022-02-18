@@ -1,14 +1,12 @@
 package View;
 
-
-import domain.Board;
-import domain.Names;
+import domain.LadderGame;
 
 
 public class OutputView {
 
-    public static void showBoard(Board board) {
-        System.out.println(board.toString());
+    public static void showLadder(LadderGame ladderGame) {
+        System.out.println(ladderGame.toString());
     }
 
     public static void showNames(Names names) {
